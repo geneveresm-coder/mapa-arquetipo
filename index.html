@@ -7,13 +7,13 @@
 <meta name="description" content="Existen 8 patrones femeninos ancestrales. Uno dirige tu forma de amar, elegir y sabotearte. Descubre cuál es el tuyo y cómo romper el ciclo. Guía completa $6 USD.">
 <meta property="og:title" content="El Mapa de tu Arquetipo — por qué amas como amas (y cómo romper el ciclo)">
 <meta property="og:description" content="8 arquetipos femeninos. Uno de ellos dirige tu historia de amor desde la sombra. Guía completa de las 8 diosas por $6 USD.">
-<meta property="og:image" content="img/mockup.jpg">
+<meta property="og:image" content="img/diosa.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap">
 <!-- Meta Pixel -->
 <script>
-var CHECKOUT='https://pay.hotmart.com/U106534885G'; // ← link de pago (con order bumps)
+var CHECKOUT='https://pay.hotmart.com/U106534885G?checkoutMode=10'; // ← link de pago (con order bumps)
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -24,7 +24,7 @@ fbq('track','PageView');
 fbq('track','ViewContent',{content_name:'Landing Arquetipos Directo',value:6,currency:'USD'});
 function goCheckout(pos){
   fbq('track','InitiateCheckout',{value:6,currency:'USD',content_name:'Informe Arquetipos'});
-  setTimeout(function(){window.location.href=CHECKOUT+'?sck=landing-'+pos;},250);
+  setTimeout(function(){window.location.href=CHECKOUT+'&sck=landing-'+pos;},250);
   return false;
 }
 </script>
@@ -36,15 +36,15 @@ function goCheckout(pos){
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:"Jost",sans-serif;font-weight:300;line-height:1.6;font-size:17px;padding-bottom:76px}
+body{background:var(--bg);color:var(--ink);font-family:"Jost",sans-serif;font-weight:300;line-height:1.6;font-size:16px;padding-bottom:76px}
 .wrap{max-width:640px;margin:0 auto;padding:0 20px}
 section{padding:52px 0}
 .eyebrow{font-weight:500;letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--accent);margin-bottom:16px}
 h1,h2,.pull{text-wrap:balance}
-h1{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(32px,7.4vw,48px);line-height:1.12;margin-bottom:10px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(31px,6.6vw,44px);line-height:1.12;margin-bottom:10px}
 h1 em{font-style:italic;color:var(--accent-dark)}
-h2{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(26px,5.2vw,36px);line-height:1.18;margin-bottom:16px}
-.sub{font-size:18px;color:var(--muted);margin:14px auto 26px;max-width:520px}
+h2{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(25px,4.8vw,32px);line-height:1.18;margin-bottom:16px}
+.sub{font-size:16.5px;color:var(--muted);margin:14px auto 24px;max-width:500px}
 .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;
   letter-spacing:.05em;padding:19px 44px;border-radius:999px;font-size:18px;
   box-shadow:0 12px 28px rgba(185,138,110,.4);transition:transform .15s ease,background .15s ease;text-align:center}
@@ -52,7 +52,7 @@ h2{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(26px,5
 .cta-note{font-size:13.5px;color:var(--muted);margin-top:11px;letter-spacing:.02em}
 .hero{padding:58px 0 46px;text-align:center}
 .checks{display:flex;flex-direction:column;gap:9px;margin:22px auto 28px;max-width:440px;text-align:left}
-.checks div{padding-left:30px;position:relative;font-size:16.5px}
+.checks div{padding-left:30px;position:relative;font-size:16px}
 .checks div:before{content:"✓";position:absolute;left:2px;color:var(--accent-dark);font-weight:600}
 .strip{display:flex;justify-content:center;margin-top:38px}
 .strip img{width:clamp(72px,10.5vw,104px);height:clamp(72px,10.5vw,104px);object-fit:cover;border-radius:50%;
@@ -60,10 +60,10 @@ h2{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(26px,5
 .strip img:first-child{margin-left:0}
 .strip-note{font-size:13px;color:var(--muted);margin-top:14px;letter-spacing:.06em}
 ul.pain{list-style:none;margin:22px 0 6px}
-ul.pain li{padding:13px 0 13px 32px;position:relative;border-bottom:1px solid rgba(185,138,110,.18);font-size:16.5px}
+ul.pain li{padding:13px 0 13px 32px;position:relative;border-bottom:1px solid rgba(185,138,110,.18);font-size:16px}
 ul.pain li:before{content:"✦";position:absolute;left:2px;color:var(--accent)}
-.pull{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:24px;line-height:1.35;
-  border-left:3px solid var(--accent);padding-left:18px;margin:30px 0 0}
+.pull{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:21px;line-height:1.4;
+  border-left:3px solid var(--accent);padding-left:18px;margin:28px 0 0}
 .grid8{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:28px 0 0}
 .arch{background:#fff;border-radius:16px;padding:20px 16px;box-shadow:0 8px 20px rgba(42,37,48,.07);
   border-top:3px solid var(--ac,var(--accent));text-align:center}
@@ -78,10 +78,10 @@ ul.pain li:before{content:"✦";position:absolute;left:2px;color:var(--accent)}
 .step:before{counter-increment:st;content:counter(st);position:absolute;left:20px;top:20px;
   width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;
   font-weight:600;display:flex;align-items:center;justify-content:center;font-size:16px}
-.step b{font-weight:500;display:block;margin-bottom:4px;font-size:17px}
-.step span{color:var(--muted);font-size:15.5px}
+.step b{font-weight:500;display:block;margin-bottom:4px;font-size:16.5px}
+.step span{color:var(--muted);font-size:15px}
 .offer{background:#fff;border-radius:24px;padding:34px 26px;box-shadow:0 20px 48px rgba(42,37,48,.12);text-align:center}
-.offer img.mock{width:100%;max-width:420px;border-radius:16px;margin:6px auto 20px;display:block}
+.offer img.mock{width:100%;max-width:380px;border-radius:18px;margin:6px auto 20px;display:block;box-shadow:0 14px 34px rgba(42,37,48,.18)}
 .offer .price-row{display:flex;align-items:baseline;justify-content:center;gap:12px;margin:14px 0 2px}
 .offer .price{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:64px;color:var(--accent-dark);line-height:1}
 .offer .price small{font-size:24px;font-weight:600}
@@ -178,7 +178,7 @@ body{overflow-x:hidden}
     <div class="offer">
       <div class="eyebrow">La guía completa · 8 diosas · PDF</div>
       <h2 style="margin-bottom:14px">El Informe de Arquetipos Femeninos</h2>
-      <img class="mock" src="img/mockup.jpg" alt="Informe de Arquetipos Femeninos — guía digital premium">
+      <img class="mock" src="img/diosa.jpg" alt="Afrodita — uno de los 8 arquetipos femeninos de la guía">
       <ul>
         <li><b>Perfil y auto-identificación</b> de cada una de las 8 diosas</li>
         <li><b>Tu sombra</b> + ejercicios concretos para desactivarla</li>
@@ -189,13 +189,13 @@ body{overflow-x:hidden}
       </ul>
       <div class="price-row"><span class="price"><small>$</small>6</span><span style="color:var(--muted)">USD · pago único</span></div>
       <div class="cta-note" style="margin:2px 0 18px">Menos de lo que cuesta un café con postre — y se paga en tu moneda local</div>
-      <a class="cta" href="https://pay.hotmart.com/U106534885G?sck=landing-oferta" onclick="return goCheckout('oferta')">OBTENER MI GUÍA AHORA</a>
-      <div class="cta-note">Acceso inmediato · Compra protegida por Hotmart</div>
+      <a class="cta" href="https://pay.hotmart.com/U106534885G?checkoutMode=10&sck=landing-oferta" onclick="return goCheckout('oferta')">OBTENER MI GUÍA AHORA</a>
+      <div class="cta-note">Acceso inmediato · Pago 100% seguro</div>
     </div>
     <div class="guarantee">
       <div class="ico">🛡️</div>
       <div><b style="font-weight:500">Garantía de 7 días sin preguntas.</b><br>
-      Si la guía no te muestra tu patrón con claridad, Hotmart te devuelve el 100%. El riesgo lo asumimos nosotras.</div>
+      Si la guía no te muestra tu patrón con claridad, te devolvemos el 100% de tu dinero. El riesgo lo asumimos nosotras.</div>
     </div>
   </div>
 </section>
@@ -206,14 +206,14 @@ body{overflow-x:hidden}
     <details><summary>¿Cómo sé cuál es mi arquetipo si no hay test?</summary>
       <p>Cada capítulo abre con el perfil y las señales inconfundibles de esa diosa. Te vas a reconocer en los primeros minutos — el reconocimiento es más honesto que cualquier quiz de 12 preguntas. Y si dudas entre dos, la guía explica cómo conviven tu arquetipo dominante y el secundario.</p></details>
     <details><summary>¿Cuándo y cómo lo recibo?</summary>
-      <p>Inmediatamente después del pago, Hotmart envía el PDF a tu correo. Lo lees en el celular, tablet o computadora.</p></details>
+      <p>Inmediatamente después del pago, el PDF llega a tu correo. Lo lees en el celular, tablet o computadora.</p></details>
     <details><summary>¿Sirve si estoy soltera?</summary>
       <p>Especialmente si estás soltera: es el momento exacto para ver el patrón antes de repetirlo. La guía también cubre dinero, propósito y tu plan de 30 días — no solo pareja.</p></details>
     <details><summary>¿En qué moneda pago?</summary>
-      <p>El checkout de Hotmart convierte automáticamente a tu moneda local (MXN, COP, ARS…) y acepta tarjeta, OXXO, PIX y Mercado Pago según tu país.</p></details>
+      <p>El pago se convierte automáticamente a tu moneda local (MXN, COP, ARS…) y puedes pagar con tarjeta, OXXO, PIX o Mercado Pago según tu país.</p></details>
     <div class="center" style="margin-top:34px">
       <p class="pull" style="border:none;padding:0;text-align:center">La misma historia se repite hasta que la ves completa.<br>Hoy puede ser el día en que la veas.</p>
-      <a class="cta" style="margin-top:22px" href="https://pay.hotmart.com/U106534885G?sck=landing-final" onclick="return goCheckout('final')">ROMPER MI PATRÓN — $6 USD</a>
+      <a class="cta" style="margin-top:22px" href="https://pay.hotmart.com/U106534885G?checkoutMode=10&sck=landing-final" onclick="return goCheckout('final')">ROMPER MI PATRÓN — $6 USD</a>
       <div class="cta-note">PDF inmediato · Garantía de 7 días</div>
     </div>
   </div>
@@ -223,13 +223,13 @@ body{overflow-x:hidden}
   <div class="wrap">
     ARQUETIPOS FEMENINOS<br>
     Este material es de crecimiento personal y entretenimiento; no sustituye terapia psicológica.<br>
-    Compras procesadas y protegidas por Hotmart · Garantía de reembolso de 7 días.
+    Pago procesado de forma 100% segura · Garantía de reembolso de 7 días.
   </div>
 </footer>
 
 <div class="stickybar">
   <span class="p">$6 USD</span>
-  <a class="cta" href="https://pay.hotmart.com/U106534885G?sck=landing-sticky" onclick="return goCheckout('sticky')">OBTENER MI GUÍA</a>
+  <a class="cta" href="https://pay.hotmart.com/U106534885G?checkoutMode=10&sck=landing-sticky" onclick="return goCheckout('sticky')">OBTENER MI GUÍA</a>
 </div>
 </body>
 </html>
