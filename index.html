@@ -24,9 +24,21 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','27368292599540575');
 fbq('track','PageView');
 fbq('track','ViewContent',{content_name:'Landing Arquetipos Directo',value:6,currency:'USD'});
+function getFbclid(){
+  try{
+    var fb=new URLSearchParams(window.location.search).get('fbclid');
+    if(fb)return fb;
+    var m=document.cookie.match(/(?:^|;\s*)_fbc=([^;]+)/); // _fbc = fb.1.<ts>.<fbclid>
+    if(m){var p=decodeURIComponent(m[1]).split('.');if(p.length>=4)return p.slice(3).join('.');}
+  }catch(e){}
+  return null;
+}
 function goCheckout(pos){
   fbq('track','InitiateCheckout',{value:6,currency:'USD',content_name:'Informe Arquetipos'});
-  setTimeout(function(){window.location.href=CHECKOUT+'&sck=landing-'+pos;},250);
+  var url=CHECKOUT+'&sck=landing-'+pos;
+  var fb=getFbclid();
+  if(fb)url+='&fbclid='+encodeURIComponent(fb);
+  setTimeout(function(){window.location.href=url;},250);
   return false;
 }
 </script>
